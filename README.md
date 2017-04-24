@@ -1,2 +1,7 @@
 # twg
-Python script for grabbing tweets from the Twitter streaming API
+Python script, leveraging [Tweepy](https://github.com/tweepy/tweepy), for grabbing tweets from the Twitter streaming API.
+
+Line 6-9 in the script must be filled out by the user with keys and tokens created [here](https://apps.twitter.com).
+
+Then just: 
+    $ python twg.py
