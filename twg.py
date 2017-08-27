@@ -9,10 +9,10 @@ print("\nTweetgrabber")
 print("==============================================")
 
 # My access keys and tokens
-consumer_key = "mnXXF6l8CBzGNbvPK9ZhjW5uH"
-consumer_secret = "z8jgbIZSjMyywUBpANskYWbfMsyLFWbQjtZbEXNb3ECz6t0gbH"
-access_secret = "2baWHs2ji4CYHs21T8dDHJsX9bQVtQbH9rr6t8M3yPwqt"
-access_token = "16366472-2KUgJc9K8tdDAkSJBwYYHO2uAuzmCvOChJaNkUN9I"
+consumer_key = ""
+consumer_secret = ""
+access_secret = ""
+access_token = "16366472-"
 
 # Set up authorisation towards the API
 auth = OAuthHandler(consumer_key, consumer_secret)
