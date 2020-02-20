@@ -12,7 +12,7 @@ print("==============================================")
 consumer_key = ""
 consumer_secret = ""
 access_secret = ""
-access_token = "16366472-"
+access_token = ""
 
 # Set up authorisation towards the API
 auth = OAuthHandler(consumer_key, consumer_secret)
