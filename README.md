@@ -1,7 +1,32 @@
-# twg
-Python script, leveraging [Tweepy](https://github.com/tweepy/tweepy), for grabbing tweets from the Twitter streaming API.
+# TWEETGRABBER
 
-Line 12-15 in the script must be filled out by the user with keys and tokens created [here](https://apps.twitter.com).
+Tweetgrabber is a method for filtering and collecting tweets live via the SearchAPI. 
 
-Then just: 
-    $ python twg.py
+## Usage 
+
+A set of valid Twitter API keys must be provided in `credentials.py`.
+
+Start a collection job. It is recommendable to do this in a [`screen`](https://linuxize.com/post/how-to-use-linux-screen/) session.
+
+```
+$ python twg.py -p <your-project-name>
+```
+
+Use `-p` or `--project` to set the project name (default = twg).
+
+You will be prompted to set filtering terms.
+
+### Extract the data currently in the databases
+```
+$ python getdata.py -p <your-project-name>
+```
+
+
+### Stopping the collection
+
+Enter the relevant `screen` session and terminate by `ctrl`+`C`, or do `ps aux | grep twg` and `kill <process id>` for the relevant process(es).
+
+
+### Drastic cleanup
+
+`python dbkill.py` - delete all databases in the directory.

@@ -1,0 +1,11 @@
+# Any graphmonster input/output files
+*.csv
+*.db
+*.db-journal
+
+# Notebooks for dev
+*.ipynb
+*.ipynb_checkpoints
+
+# Cache
+__pycache__
