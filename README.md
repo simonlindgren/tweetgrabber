@@ -16,7 +16,10 @@ Use `-p` or `--project` to set the project name (default = twg).
 
 You will be prompted to set filtering terms.
 
-### Extract the data currently in the databases
+### Extract data to csv
+
+At any point during data collection, run this to write what is currently in the database to csv.
+
 ```
 $ python getdata.py -p <your-project-name>
 ```
@@ -29,4 +32,4 @@ Enter the relevant `screen` session and terminate by `ctrl`+`C`, or do `ps aux |
 
 ### Drastic cleanup
 
-`python dbkill.py` - delete all databases in the directory.
+`$ python dbkill.py` - delete all databases in the directory.
