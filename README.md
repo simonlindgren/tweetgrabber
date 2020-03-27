@@ -6,15 +6,20 @@ Tweetgrabber is a method for filtering and collecting tweets live via the Search
 
 A set of valid Twitter API keys must be provided in `credentials.py`.
 
+Edit the `parameters.py` according to your project.
+
 Start a collection job. It is recommendable to do this in a [`screen`](https://linuxize.com/post/how-to-use-linux-screen/) session.
 
 ```
-$ python twg.py -p <your-project-name>
+$ python twg.py
 ```
 
-Use `-p` or `--project` to set the project name (default = twg).
+A launcher bash script is provided if you want your collector to persist after any interruptions:
 
-You will be prompted to set filtering terms.
+```
+$ sh twh.sh
+```
+
 
 ### Extract data to csv
 
